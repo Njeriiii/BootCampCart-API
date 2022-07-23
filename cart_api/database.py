@@ -19,7 +19,8 @@ password = os.environ.get("POSTGRES_PASSWORD", "bootcamp")
 hostname = os.environ.get("POSTGRES_HOST", "localhost")
 
 
-ext_db = PostgresqlExtDatabase(database, user=user, password=password, host=hostname)
+ext_db = PostgresqlExtDatabase(
+    database, user=user, password=password, host=hostname)
 
 
 class BaseModel(Model):
@@ -43,26 +44,29 @@ class DatabaseProducts(BaseModel):
         products = [
             DatabaseProducts(
                 id=1,
-                name="Standard SSL",
-                description="Your standard SSL certificate",
-                price=14.99,
+                name="Bluetooth Headphones - Pink",
+                description="Great Sound",
+                price=39.99,
                 is_on_sale=False,
                 sale_price=8.99,
+                # image_url="https://cdn.shopify.com/s/files/1/1837/7737/products/AV52-Rose_1024x1024@2x.jpg?v=1632331496"
             ),
             DatabaseProducts(
                 id=2,
-                name="Wildcard SSL",
-                description="Encrypt any subdomains may exist on the site",
-                price=29.99,
-                is_on_sale=True,
-                sale_price=19.99,
+                name="Cargo Pants with Silver Chains - Black",
+                description="Sweatpants, but Anime",
+                price=19.99,
+                is_on_sale=False,
+                sale_price=9.99,
+                # image_url="https://cdn.shopify.com/s/files/1/0634/6335/8721/products/4ppGRGD7wDYSN59kegX5BWSnS4M3Vezk-24.jpg?v=1651927875"
             ),
             DatabaseProducts(
                 id=3,
-                name="Domain - .com",
-                description="Purchase a .com domain",
+                name="Bluetooth Speaker - PINK",
+                description="Will blow your ears out :)",
                 price=9.99,
                 is_on_sale=False,
+                # image_url="https://m.media-amazon.com/images/I/61JTV7JQlyL._AC_SX679_.jpg"
             ),
             DatabaseProducts(
                 id=4,

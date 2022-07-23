@@ -1,0 +1,19 @@
+{
+  "name": "bootcampcart-api",
+  "version": "1.0.0",
+  "description": "> The goal of this session is to provide an overview on Building APIs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thoag-godaddy/BootCampCart-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thoag-godaddy/BootCampCart-API/issues"
+  },
+  "homepage": "https://github.com/thoag-godaddy/BootCampCart-API#readme"
+}
